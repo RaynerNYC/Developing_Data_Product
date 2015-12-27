@@ -2,12 +2,12 @@
 ==============================================
 
 Assignment Submission Files
-- [ui.R](https://github.com/raynernyc/Developing-Data-Products-Assignment/blob/master/ui.R)
-- [server.R](https://github.com/raynernyc/Developing-Data-Products-Assignment/blob/master/server.R)
-- [README.md](https://github.com/raynernyc/Developing-Data-Products-Assignment/blob/master/README.md)
+- [ui.R](https://github.com/RaynerNYC/Developing_Data_Product/blob/master/ui.R)
+- [server.R](https://github.com/RaynerNYC/Developing_Data_Product/blob/master/server.R)
+- [README.md](https://github.com/RaynerNYC/Developing_Data_Product/blob/master/README.md)
 
 Instructions
-1. Clone the code using 'git clone https://github.com/raynernyc/Developing-Data-Products-Assignment.git YOURDIRECTORY'
+1. Clone the code using 'git clone https://github.com/RaynerNYC/Developing_Data_Product.git YOURDIRECTORY'
 
 2. Load your RStudio
 
