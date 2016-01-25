@@ -26,11 +26,11 @@ Assignment Submission Files
 
 3. Set your working directory to YOURDIRECTORY using setwd("YOURDIRECTORY")
 
-4. Load the Shiny library using library(shiny)
+4. Load the R scripts
 
-5. Run the application using runApp()
+5. Run the application
 
-6. You will see the application in a browser. Follow the instructions to use the application.
+6. You will see the application in a browser. 
 
 #### Dependencies
 
