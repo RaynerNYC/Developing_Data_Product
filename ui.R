@@ -1,5 +1,4 @@
 library(shiny)
-library(shiny)
 
 fluidPage(
   titlePanel("Kuala Lumpur Air Pollutant Index (API) from Aug 2013 to Feb 2015"),
