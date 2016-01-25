@@ -32,10 +32,8 @@ Assignment Submission Files
 
 6. You will see the application in a browser. Follow the instructions to use the application.
 
-Dependencies
+#### Dependencies
 
-1. Shiny library
-
-More Information
-
-The application is deployed on ShinyApps.io at [https://raynernyc.shinyapps.io/assignment/](https://raynernyc.shinyapps.io/assignment/).
+1. shiny library
+2. ggplot2 library
+3. lubridate library
