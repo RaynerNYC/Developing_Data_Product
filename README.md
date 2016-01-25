@@ -19,6 +19,7 @@ Assignment Submission Files
 - [ui.R](https://github.com/RaynerNYC/Developing_Data_Product/blob/master/ui.R)
 - [server.R](https://github.com/RaynerNYC/Developing_Data_Product/blob/master/server.R)
 - [README.md](https://github.com/RaynerNYC/Developing_Data_Product/blob/master/README.md)
+- [Slide.rmd](https://github.com/RaynerNYC/Developing_Data_Product/blob/master/Presentation/Slide.rmd)
 
 #### Instructions
 1. Clone the code using 'git clone https://github.com/RaynerNYC/Developing_Data_Product.git YOURDIRECTORY'
