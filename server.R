@@ -1,26 +1,11 @@
 library(shiny)
-shinyServer(
-  function(input, output){
-    output$rentalYield <- renderText({ calculateRentalYield(input$weeklyRent, input$price) })
-    output$cashflowPerYear <- renderText({calculateYearlyCashflow(input$weeklyRent, input$strataPerQuarter, input$councilPerQuarter, input$waterPerQuarter, input$managementFees, input$weeklyRepayments)})
-    output$cashflowPerWeek <- renderText({calculateWeeklyCashflow(input$weeklyRent, input$strataPerQuarter, input$councilPerQuarter, input$waterPerQuarter, input$managementFees, input$weeklyRepayments)})
-  }
-)
+library(lubridate)  #for selecting specific year & month from date data 
+library(ggplot2)
 
-calculateRentalYield <- function (weeklyRent, propertyPrice) 
-{
-  result <- weeklyRent * 52 / propertyPrice * 100
-  return(round(result, digits = 2))
-}
-
-calculateYearlyCashflow <- function(weeklyRent, strata, council, water, managementFees, weeklyRepayments)
-{
-  result <- weeklyRent * 52 - (strata + council + water) * 4 - managementFees * 52 - weeklyRepayments * 52
-  return(round(result, digits = 2))
-}
-
-calculateWeeklyCashflow <- function(weeklyRent, strata, council, water, managementFees, weeklyRepayments)
-{
-  result <- (weeklyRent * 52 - (strata + council + water) * 4 - managementFees * 52 - weeklyRepayments * 52) / 52
-  return(round(result, digits = 2))
+server <-function(input, output) {
+  cheras <- read.csv("API_CherasKL.csv")
+  output$plot1<-renderPlot({
+    selected.data<-cheras[month(cheras$Date)==input$month & year(cheras$Date)==input$year,]
+    ggplot(data=selected.data, aes(x=selected.data$Hour, y=selected.data$API))+geom_smooth(color="blue")+labs(x="Hour", y="API Reading")
+  })
 }
