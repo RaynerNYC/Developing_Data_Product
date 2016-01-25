@@ -11,7 +11,8 @@ https://raynernyc.shinyapps.io/KLAirPollutantIndex/
 The pitch presentation can be accessed in Rpubs:
 http://rpubs.com/RaynerNYC/KLAirPollutantIndex
 
-#### 3. All the codes can be downloaded from Github Repo:
+#### 3. Codes submission at Github Repository
+All the codes can be downloaded from Github Repo:
 https://github.com/RaynerNYC/Developing_Data_Product/
 
 Assignment Submission Files
